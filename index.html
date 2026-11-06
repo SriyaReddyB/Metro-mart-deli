@@ -1,0 +1,443 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#e8d8bc">
+
+  <title>Metro Mart Deli | Jersey City, NJ</title>
+
+  <style>
+
+    * {
+
+      box-sizing: border-box;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+    body {
+
+      background: #e8d8bc;
+
+      color: #29251f;
+
+      font-family: Georgia, "Times New Roman", serif;
+
+      line-height: 1.6;
+
+    }
+
+    header {
+
+      background: #29251f;
+
+      color: #f4e8d2;
+
+      text-align: center;
+
+      padding: 32px 16px;
+
+      border-bottom: 5px solid #b08a43;
+
+    }
+
+    .brand {
+
+      font-size: clamp(30px, 7vw, 52px);
+
+      letter-spacing: 3px;
+
+      font-weight: bold;
+
+    }
+
+    .tagline {
+
+      color: #d7bd8e;
+
+      letter-spacing: 3px;
+
+      font-size: 12px;
+
+      margin-top: 5px;
+
+      text-transform: uppercase;
+
+    }
+
+    nav {
+
+      background: #8c7558;
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 28px;
+
+      padding: 13px;
+
+      flex-wrap: wrap;
+
+    }
+
+    nav a {
+
+      color: #fff8ed;
+
+      text-decoration: none;
+
+      font-size: 14px;
+
+      letter-spacing: 1px;
+
+    }
+
+    nav a:hover {
+
+      color: #f0d28e;
+
+    }
+
+    .hero {
+
+      text-align: center;
+
+      padding: 65px 20px 55px;
+
+      background: #d7c3a2;
+
+      border-bottom: 1px solid #b08a43;
+
+    }
+
+    .hero h1 {
+
+      font-size: clamp(32px, 7vw, 54px);
+
+      line-height: 1.2;
+
+      margin-bottom: 16px;
+
+    }
+
+    .hero p {
+
+      max-width: 600px;
+
+      margin: 0 auto 25px;
+
+      font-size: 17px;
+
+    }
+
+    .order-button {
+
+      display: inline-block;
+
+      background: #29251f;
+
+      color: #fff8ed;
+
+      padding: 13px 30px;
+
+      text-decoration: none;
+
+      border: 2px solid #b08a43;
+
+      letter-spacing: 2px;
+
+      font-weight: bold;
+
+    }
+
+    .order-button:hover {
+
+      background: #8c7558;
+
+    }
+
+    .section {
+
+      padding: 45px 20px;
+
+      text-align: center;
+
+    }
+
+    .section h2 {
+
+      font-size: 30px;
+
+      margin-bottom: 10px;
+
+      color: #493b2c;
+
+    }
+
+    .section-intro {
+
+      margin-bottom: 28px;
+
+      color: #68563f;
+
+    }
+
+    .photo-wall {
+
+      max-width: 1000px;
+
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+      gap: 28px;
+
+      align-items: center;
+
+    }
+
+    .photo-frame {
+
+      background: #fffdf7;
+
+      padding: 10px;
+
+      box-shadow: 0 5px 15px #59452c35;
+
+      transform: rotate(-1deg);
+
+    }
+
+    .photo-frame:nth-child(even) {
+
+      transform: rotate(1.5deg);
+
+    }
+
+    .photo-frame img {
+
+      width: 100%;
+
+      height: 190px;
+
+      object-fit: cover;
+
+      display: block;
+
+      filter: sepia(25%) saturate(75%);
+
+    }
+
+    .photo-caption {
+
+      padding: 9px 3px 2px;
+
+      font-size: 15px;
+
+      color: #51432f;
+
+    }
+
+    .history-note {
+
+      max-width: 700px;
+
+      margin: 35px auto 0;
+
+      font-style: italic;
+
+      color: #68563f;
+
+    }
+
+    .menu-preview {
+
+      background: #d7c3a2;
+
+      border-top: 1px solid #b08a43;
+
+      border-bottom: 1px solid #b08a43;
+
+    }
+
+    footer {
+
+      background: #29251f;
+
+      color: #e8d8bc;
+
+      text-align: center;
+
+      padding: 28px 15px;
+
+      font-size: 14px;
+
+    }
+
+    footer p + p {
+
+      margin-top: 5px;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="brand">METRO MART DELI</div>
+
+    <div class="tagline">Jersey City · New Jersey</div>
+
+  </header>
+
+  <nav>
+
+    <a href="#home">HOME</a>
+
+    <a href="#history">OUR WALL</a>
+
+    <a href="#menu">MENU</a>
+
+    <a href="#contact">CONTACT</a>
+
+  </nav>
+
+  <main>
+
+    <section class="hero" id="home">
+
+      <h1>Welcome to Metro Mart Deli</h1>
+
+      <p>
+
+        Your neighborhood deli in Jersey City.
+
+        Good food, familiar faces, and a little local history.
+
+      </p>
+
+      <a class="order-button" href="#menu">ORDER NOW</a>
+
+    </section>
+
+    <section class="section" id="history">
+
+      <h2>A Little Piece of Jersey City</h2>
+
+      <p class="section-intro">
+
+        Celebrating the places and memories that make our city special.
+
+      </p>
+
+      <div class="photo-wall">
+
+        <div class="photo-frame">
+
+          <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=700"
+
+               alt="Statue of Liberty">
+
+          <div class="photo-caption">The Statue of Liberty</div>
+
+        </div>
+
+        <div class="photo-frame">
+
+          <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=700"
+
+               alt="Historic city buildings">
+
+          <div class="photo-caption">New York City Skyline</div>
+
+        </div>
+
+        <div class="photo-frame">
+
+          <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=700"
+
+               alt="City streets and buildings">
+
+          <div class="photo-caption">City Streets & Memories</div>
+
+        </div>
+
+        <div class="photo-frame">
+
+          <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=700"
+
+               alt="Vintage-style city street">
+
+          <div class="photo-caption">The Streets of Our City</div>
+
+        </div>
+
+      </div>
+
+      <p class="history-note">
+
+        Inspired by the historic buildings, landmarks, and old photographs
+
+        that tell the story of Jersey City and its neighbors.
+
+      </p>
+
+    </section>
+
+    <section class="section menu-preview" id="menu">
+
+      <h2>Fresh From Our Deli</h2>
+
+      <p class="section-intro">
+
+        Explore our menu and discover your favorites.
+
+      </p>
+
+      <a class="order-button" href="menu.html">VIEW OUR MENU</a>
+
+    </section>
+
+    <section class="section" id="contact">
+
+      <h2>Visit Metro Mart Deli</h2>
+
+      <p>Jersey City, New Jersey</p>
+
+      <p>We look forward to serving you!</p>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p><strong>METRO MART DELI</strong></p>
+
+    <p>Jersey City, New Jersey</p>
+
+    <p>© 2026 Metro Mart Deli. All rights reserved.</p>
+
+  </footer>
+
+</body>
+
+</html>
